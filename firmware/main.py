@@ -1,6 +1,5 @@
 import time
 import board
-import digitalio
 import pwmio
 import util
 import effects
@@ -11,13 +10,9 @@ pwmBright1 = 10000
 pwmBright2 = 30000
 pwmMax = ((2 ** 16) - 1)
 
-ledExt = digitalio.DigitalInOut(board.A0)
-ledExt.switch_to_output(value=False)
-
-ledCpu = pwmio.PWMOut(board.MOSI, duty_cycle=pwmDim)
-ledAct = pwmio.PWMOut(board.MISO, duty_cycle=pwmOff)
-
-print('mocha')
+ledExt = pwmio.PWMOut(board.A0, duty_cycle=pwmOff)
+ledCpu = pwmio.PWMOut(board.A1, duty_cycle=pwmOff)
+ledAct = pwmio.PWMOut(board.RX, duty_cycle=pwmOff)
 
 def actButtonDown():
   print('button down')
@@ -29,6 +24,27 @@ def actButtonUp():
   ledAct.duty_cycle = pwmOff
 
 util.registerButton(board.SCK, actButtonDown, actButtonUp)
+
+# Startup animation
+time.sleep(0.5)
+ledAct.duty_cycle = pwmBright1
+time.sleep(0.2)
+ledAct.duty_cycle = pwmOff
+ledCpu.duty_cycle = pwmBright1
+time.sleep(0.2)
+ledCpu.duty_cycle = pwmOff
+ledExt.duty_cycle = pwmBright1
+time.sleep(0.2)
+ledExt.duty_cycle = pwmOff
+ledCpu.duty_cycle = pwmBright1
+time.sleep(0.2)
+ledCpu.duty_cycle = pwmOff
+ledAct.duty_cycle = pwmBright1
+time.sleep(0.2)
+ledAct.duty_cycle = pwmOff
+time.sleep(0.2)
+ledCpu.duty_cycle = pwmDim
+ledExt.duty_cycle = pwmDim
 
 
 # Run loop

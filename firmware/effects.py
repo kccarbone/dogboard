@@ -15,8 +15,8 @@ pwmGrad = [
 ]
 
 # Outputs
-branchA = pwmio.PWMOut(board.A1, duty_cycle=pwmOff)
-branchB = pwmio.PWMOut(board.RX, duty_cycle=pwmOff)
+branchA = pwmio.PWMOut(board.MOSI, duty_cycle=pwmOff)
+branchB = pwmio.PWMOut(board.MISO, duty_cycle=pwmOff)
 
 # State vars
 currentEffect = 0
@@ -25,19 +25,27 @@ tick = 0
 
 # Define effects
 #   Based on 1,000 "steps" of roughly 10ms each
-def off(_):
+def allOff(_):
   branchA.duty_cycle = pwmOff
   branchB.duty_cycle = pwmOff
+
+def on1(_):
+  branchA.duty_cycle = pwmMax
+  branchB.duty_cycle = pwmOff
+
+def on2(_):
+  branchA.duty_cycle = pwmOff
+  branchB.duty_cycle = pwmMax
 
 def alternatingBlink(step):
   stepInterval = 100 # Lower = faster
 
   if (step // stepInterval) % 2:
     branchA.duty_cycle = pwmOff
-    branchB.duty_cycle = pwmGrad[3]
+    branchB.duty_cycle = pwmMax
   else:
     branchB.duty_cycle = pwmOff
-    branchA.duty_cycle = pwmGrad[3]
+    branchA.duty_cycle = pwmMax
 
 def crossFade(step):
   brightFactor = 50 # 1 - 100
@@ -52,7 +60,9 @@ def crossFade(step):
 
 # Add new effects to list
 effectList = [
-  off,
+  allOff,
+  on1,
+  on2,
   alternatingBlink,
   crossFade
 ]
