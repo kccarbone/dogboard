@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.3
+          "min_clearance": 0.254
         }
       },
       "diff_pair_dimensions": [
@@ -79,6 +79,7 @@
         "footprint_type_mismatch": "ignore",
         "hole_clearance": "warning",
         "hole_near_hole": "error",
+        "holes_co_located": "warning",
         "invalid_outline": "error",
         "isolated_copper": "ignore",
         "item_on_disabled_layer": "error",
@@ -180,10 +181,13 @@
         0.0,
         0.2,
         0.254,
+        0.3,
         0.381,
         0.508,
+        0.6,
         0.635,
-        0.762
+        0.762,
+        1.0
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -592,6 +596,7 @@
   },
   "schematic": {
     "annotate_start_num": 0,
+    "bom_export_filename": "",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -696,6 +701,10 @@
     [
       "00ae016e-c4e5-48c5-8483-0675914ed4be",
       "Decor"
+    ],
+    [
+      "ae21f309-ebe1-49a9-91eb-31790c108b17",
+      "Output"
     ]
   ],
   "text_variables": {}
