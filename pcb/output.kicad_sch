@@ -2900,22 +2900,10 @@
 		(uuid "0715754a-2e4f-45fb-8fa2-fed1d3e1ec97")
 	)
 	(junction
-		(at 39.37 130.81)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0a5f2110-f461-4d85-8297-6534d7ce45c4")
-	)
-	(junction
 		(at 165.1 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0bc3deac-8dc3-4b47-acc1-d21062317544")
-	)
-	(junction
-		(at 46.99 142.24)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "37d1552e-bd32-45c1-a01e-438c4415e988")
 	)
 	(junction
 		(at 46.99 107.95)
@@ -2988,16 +2976,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f935a903-9594-443a-8d62-17dbdf405a2a")
-	)
-	(wire
-		(pts
-			(xy 39.37 127) (xy 39.37 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0673fc4e-7562-4cff-8257-c273b8142d82")
 	)
 	(wire
 		(pts
@@ -3371,6 +3349,16 @@
 	)
 	(wire
 		(pts
+			(xy 82.55 132.08) (xy 85.09 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "828583ff-2507-4348-93e7-fc700464bbe8")
+	)
+	(wire
+		(pts
 			(xy 223.52 58.42) (xy 223.52 62.23)
 		)
 		(stroke
@@ -3408,6 +3396,16 @@
 			(type default)
 		)
 		(uuid "8c13e2ad-8b89-463a-9bee-bc3c218b0053")
+	)
+	(wire
+		(pts
+			(xy 39.37 135.89) (xy 39.37 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f419d8a-12fa-4cdb-8ce7-743e57db3157")
 	)
 	(wire
 		(pts
@@ -3531,16 +3529,6 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 130.81) (xy 39.37 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b68c9a06-ba4d-4e72-9e8f-9c921ff316cc")
-	)
-	(wire
-		(pts
 			(xy 57.15 140.97) (xy 59.69 140.97)
 		)
 		(stroke
@@ -3641,16 +3629,6 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 130.81) (xy 46.99 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e6153d96-4f5f-4ec4-818b-a55f605a3b8d")
-	)
-	(wire
-		(pts
 			(xy 232.41 48.26) (xy 240.03 48.26)
 		)
 		(stroke
@@ -3698,6 +3676,16 @@
 			(type default)
 		)
 		(uuid "fb69addc-3d51-4513-8e8f-30f7782e6908")
+	)
+	(wire
+		(pts
+			(xy 82.55 127) (xy 85.09 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff5e375a-c100-44a7-9956-32383a22437c")
 	)
 	(rectangle
 		(start 31.75 85.09)
@@ -3953,6 +3941,28 @@
 		)
 		(uuid "fd534573-e4ea-46eb-9a75-bd04736f6c6c")
 	)
+	(global_label "SIG_{A}"
+		(shape input)
+		(at 85.09 132.08 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "155be17a-9740-49e9-a04d-f218f0cd481b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 92.0812 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "SIG_{B}"
 		(shape input)
 		(at 137.16 93.98 180)
@@ -3971,6 +3981,28 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SIG_{B}"
+		(shape input)
+		(at 85.09 127 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "57a1defd-7693-40f0-abcc-91f955265e88")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 92.2263 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -4277,93 +4309,8 @@
 		)
 	)
 	(symbol
-		(lib_id "_custom:Resistor_Array_4x")
-		(at 168.91 63.5 0)
-		(unit 3)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "05859b07-353f-4640-9eed-7d416d40842a")
-		(property "Reference" "R9"
-			(at 168.91 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 168.91 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "_custom:R_Array_4x1206_Convex"
-			(at 168.91 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 168.91 63.5 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 168.91 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "7"
-			(uuid "74f6dbfe-4428-47f9-9bd3-151638b0c9cf")
-		)
-		(pin "4"
-			(uuid "5209f947-925b-46d8-b264-dc0d8e31d9c7")
-		)
-		(pin "3"
-			(uuid "7fd0473c-9789-4e54-9819-e8b8d7691917")
-		)
-		(pin "8"
-			(uuid "5e7d5bda-ca1b-46c7-8669-2570752a6afd")
-		)
-		(pin "5"
-			(uuid "5f6d0933-f94a-440b-a05e-80cf540413d7")
-		)
-		(pin "1"
-			(uuid "b4543b58-f446-4af7-ace7-1e5213b9d086")
-		)
-		(pin "2"
-			(uuid "1a9a0e75-d26e-4d5f-b612-30649e1a358a")
-		)
-		(pin "6"
-			(uuid "d051c53b-418b-4e59-83a9-832c900d9760")
-		)
-		(instances
-			(project ""
-				(path "/9e162a60-374f-40c4-bc73-005d1127f965/ae21f309-ebe1-49a9-91eb-31790c108b17"
-					(reference "R9")
-					(unit 3)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3.3V")
-		(at 39.37 127 0)
+		(at 39.37 135.89 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4371,7 +4318,7 @@
 		(dnp no)
 		(uuid "0ffda4fd-a9d5-4e9c-8bcb-5dcef2b487ce")
 		(property "Reference" "#PWR033"
-			(at 39.37 130.81 0)
+			(at 39.37 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4380,7 +4327,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 39.37 123.19 0)
+			(at 39.37 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4388,7 +4335,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 39.37 127 0)
+			(at 39.37 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4397,7 +4344,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 39.37 127 0)
+			(at 39.37 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4406,7 +4353,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 39.37 127 0)
+			(at 39.37 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4573,6 +4520,73 @@
 			(project "dogboard"
 				(path "/9e162a60-374f-40c4-bc73-005d1127f965/ae21f309-ebe1-49a9-91eb-31790c108b17"
 					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "_custom:Resistor_Standard")
+		(at 168.91 63.5 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1dba08cb-e5d8-4784-a0e1-075c557a2873")
+		(property "Reference" "R14"
+			(at 168.91 60.96 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 168.91 63.5 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "_custom:R_0603_HandSolder"
+			(at 168.91 59.69 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 168.91 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 168.91 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "12cd0ee4-ff7d-404b-9b7b-06463be7435f")
+		)
+		(pin "2"
+			(uuid "87b271eb-da81-45c3-9f40-0d0e4d109d08")
+		)
+		(instances
+			(project "dogboard"
+				(path "/9e162a60-374f-40c4-bc73-005d1127f965/ae21f309-ebe1-49a9-91eb-31790c108b17"
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -4813,6 +4827,73 @@
 	)
 	(symbol
 		(lib_id "_custom:Resistor_Standard")
+		(at 158.75 44.45 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4f2325d9-ef2b-42e5-969f-6eb0f7f35d05")
+		(property "Reference" "R12"
+			(at 158.75 41.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 158.75 44.45 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "_custom:R_0603_HandSolder"
+			(at 158.75 40.64 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 158.75 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 158.75 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b4ac5f92-935c-42a9-8b57-03342ca842e6")
+		)
+		(pin "2"
+			(uuid "4ac797e2-4d44-4e80-88cc-80e3ed8bf7db")
+		)
+		(instances
+			(project "dogboard"
+				(path "/9e162a60-374f-40c4-bc73-005d1127f965/ae21f309-ebe1-49a9-91eb-31790c108b17"
+					(reference "R12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "_custom:Resistor_Standard")
 		(at 62.23 53.34 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5005,91 +5086,6 @@
 			(project "dogboard"
 				(path "/9e162a60-374f-40c4-bc73-005d1127f965/ae21f309-ebe1-49a9-91eb-31790c108b17"
 					(reference "#PWR047")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "_custom:Resistor_Array_4x")
-		(at 158.75 44.45 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6bea2dce-8cf8-4011-9abb-cd6235fe1059")
-		(property "Reference" "R9"
-			(at 158.75 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 158.75 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "_custom:R_Array_4x1206_Convex"
-			(at 158.75 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 158.75 44.45 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 158.75 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "7"
-			(uuid "74f6dbfe-4428-47f9-9bd3-151638b0c9d0")
-		)
-		(pin "4"
-			(uuid "5209f947-925b-46d8-b264-dc0d8e31d9c8")
-		)
-		(pin "3"
-			(uuid "7fd0473c-9789-4e54-9819-e8b8d7691918")
-		)
-		(pin "8"
-			(uuid "5e7d5bda-ca1b-46c7-8669-2570752a6afe")
-		)
-		(pin "5"
-			(uuid "5f6d0933-f94a-440b-a05e-80cf540413d8")
-		)
-		(pin "1"
-			(uuid "b4543b58-f446-4af7-ace7-1e5213b9d087")
-		)
-		(pin "2"
-			(uuid "1a9a0e75-d26e-4d5f-b612-30649e1a358b")
-		)
-		(pin "6"
-			(uuid "d051c53b-418b-4e59-83a9-832c900d9761")
-		)
-		(instances
-			(project ""
-				(path "/9e162a60-374f-40c4-bc73-005d1127f965/ae21f309-ebe1-49a9-91eb-31790c108b17"
-					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -5500,6 +5496,73 @@
 		)
 	)
 	(symbol
+		(lib_id "_custom:Resistor_Standard")
+		(at 168.91 100.33 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a00702a9-2d29-4bc0-9ab6-1dbda66f0810")
+		(property "Reference" "R15"
+			(at 168.91 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 168.91 100.33 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "_custom:R_0603_HandSolder"
+			(at 168.91 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 168.91 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 168.91 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "074fe3eb-afd5-4670-870f-5862c2dec3b5")
+		)
+		(pin "2"
+			(uuid "7e4f3ed0-bc25-438f-865a-5bf56eb24ccb")
+		)
+		(instances
+			(project "dogboard"
+				(path "/9e162a60-374f-40c4-bc73-005d1127f965/ae21f309-ebe1-49a9-91eb-31790c108b17"
+					(reference "R15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "_custom:CAP_Standard")
 		(at 43.18 142.24 90)
 		(unit 1)
@@ -5648,91 +5711,6 @@
 		)
 	)
 	(symbol
-		(lib_id "_custom:Resistor_Array_4x")
-		(at 158.75 81.28 0)
-		(unit 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b22b6fe7-49a9-44bc-9ca8-cd805963c97e")
-		(property "Reference" "R9"
-			(at 158.75 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 158.75 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "_custom:R_Array_4x1206_Convex"
-			(at 158.75 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 158.75 81.28 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 158.75 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "7"
-			(uuid "74f6dbfe-4428-47f9-9bd3-151638b0c9d1")
-		)
-		(pin "4"
-			(uuid "5209f947-925b-46d8-b264-dc0d8e31d9c9")
-		)
-		(pin "3"
-			(uuid "7fd0473c-9789-4e54-9819-e8b8d7691919")
-		)
-		(pin "8"
-			(uuid "5e7d5bda-ca1b-46c7-8669-2570752a6aff")
-		)
-		(pin "5"
-			(uuid "5f6d0933-f94a-440b-a05e-80cf540413d9")
-		)
-		(pin "1"
-			(uuid "b4543b58-f446-4af7-ace7-1e5213b9d088")
-		)
-		(pin "2"
-			(uuid "1a9a0e75-d26e-4d5f-b612-30649e1a358c")
-		)
-		(pin "6"
-			(uuid "d051c53b-418b-4e59-83a9-832c900d9762")
-		)
-		(instances
-			(project ""
-				(path "/9e162a60-374f-40c4-bc73-005d1127f965/ae21f309-ebe1-49a9-91eb-31790c108b17"
-					(reference "R9")
-					(unit 2)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:VBUS")
 		(at 165.1 78.74 0)
 		(unit 1)
@@ -5859,6 +5837,73 @@
 			(project "dogboard"
 				(path "/9e162a60-374f-40c4-bc73-005d1127f965/ae21f309-ebe1-49a9-91eb-31790c108b17"
 					(reference "#PWR032")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "_custom:Resistor_Standard")
+		(at 158.75 81.28 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bef218e1-7ee0-4f30-8b3e-747d01fb253a")
+		(property "Reference" "R13"
+			(at 158.75 78.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 158.75 81.28 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "_custom:R_0603_HandSolder"
+			(at 158.75 77.47 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 158.75 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 158.75 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e8dfce90-5736-400e-93f0-9f677faf1fd2")
+		)
+		(pin "2"
+			(uuid "47c48f07-fbc8-486c-a698-f30552e8cc0c")
+		)
+		(instances
+			(project "dogboard"
+				(path "/9e162a60-374f-40c4-bc73-005d1127f965/ae21f309-ebe1-49a9-91eb-31790c108b17"
+					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -6213,73 +6258,6 @@
 		)
 	)
 	(symbol
-		(lib_id "_custom:CAP_Standard")
-		(at 43.18 130.81 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e58e8735-0784-443c-8dab-dda70d1f4c3b")
-		(property "Reference" "C19"
-			(at 43.18 127 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0.1uF"
-			(at 43.18 134.62 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "_custom:CAP_0402_HandSolder"
-			(at 54.61 130.81 0)
-			(effects
-				(font
-					(size 1.1 1.1)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 43.18 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 43.18 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6e3082a1-65a3-4a35-8522-855d99c14633")
-		)
-		(pin "2"
-			(uuid "9b51aacd-48db-4c98-a251-a3d29b1f7161")
-		)
-		(instances
-			(project ""
-				(path "/9e162a60-374f-40c4-bc73-005d1127f965/ae21f309-ebe1-49a9-91eb-31790c108b17"
-					(reference "C19")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GNDREF")
 		(at 147.32 63.5 0)
 		(unit 1)
@@ -6342,91 +6320,6 @@
 				(path "/9e162a60-374f-40c4-bc73-005d1127f965/ae21f309-ebe1-49a9-91eb-31790c108b17"
 					(reference "#PWR053")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "_custom:Resistor_Array_4x")
-		(at 168.91 100.33 0)
-		(unit 4)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f13bea27-cf0c-4341-818a-dbae9fd67902")
-		(property "Reference" "R9"
-			(at 168.91 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 168.91 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "_custom:R_Array_4x1206_Convex"
-			(at 168.91 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 168.91 100.33 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 168.91 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "7"
-			(uuid "74f6dbfe-4428-47f9-9bd3-151638b0c9d2")
-		)
-		(pin "4"
-			(uuid "5209f947-925b-46d8-b264-dc0d8e31d9ca")
-		)
-		(pin "3"
-			(uuid "7fd0473c-9789-4e54-9819-e8b8d769191a")
-		)
-		(pin "8"
-			(uuid "5e7d5bda-ca1b-46c7-8669-2570752a6b00")
-		)
-		(pin "5"
-			(uuid "5f6d0933-f94a-440b-a05e-80cf540413da")
-		)
-		(pin "1"
-			(uuid "b4543b58-f446-4af7-ace7-1e5213b9d089")
-		)
-		(pin "2"
-			(uuid "1a9a0e75-d26e-4d5f-b612-30649e1a358d")
-		)
-		(pin "6"
-			(uuid "d051c53b-418b-4e59-83a9-832c900d9763")
-		)
-		(instances
-			(project ""
-				(path "/9e162a60-374f-40c4-bc73-005d1127f965/ae21f309-ebe1-49a9-91eb-31790c108b17"
-					(reference "R9")
-					(unit 4)
 				)
 			)
 		)
